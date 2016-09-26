@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link href="css/estilos.css" rel="stylesheet" type="text/css" >
         <script language="JavaScript" src="scripts/jScripts.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
         
     </head>
     <body onload="javascript:exibeDataHora('hora');">
@@ -14,7 +15,7 @@
              <nav class="fixar"> 
                  <ul>
                      <li><a href="#coisas">O que é?</a></li>
-                    <li><a href="#coisas">Como funciona?</a></li>
+                    <li><a href="#cf" id="subir">Como funciona?</a></li>
                     <li><a href="#preco">Planos</a></li>
                     <li><a href="#termo">Termo de Uso</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -26,14 +27,16 @@
          </div> 
         </header>
        <section id="principal">
-     <div id="logomarca" ><h1>Sistema de Gerenciamento de Bolsas Estudantis     </h1></div>
-             </section>
+           <div id="logomarca"><h1>Sistema de Gerenciamento <br>de Bolsas Estudantis</h1><br>
+           #maisSimples  #maisRapido  #maisTransparente</div>
+           
+       </section>
         <section id="destaques">
-            <a name="termo"></a>
-            <h1>Como funciona<br><br><br><br><br><br></h1>
+            <a name="cf"></a>
+            <h2>Como funciona<br><br><br><br><br><br></h2>
         </section>
         <section id="destaques">
-            <a name="termo"></a>
+            <a name="termo" id="subir"></a>
             <h1>Planos<br><br><br><br><br><br></h1>
         </section>
         <section id="destaques">
@@ -48,4 +51,14 @@
             <div class="footer">@CopyRight - 2016 - Sistema de Gerenciamento de Bolsas Estudantis - v1.0</div>
         </footer>
     </body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+       $('#subir').click(function(){ 
+          $('html, body').animate({scrollTop:0}, 'slow');
+      return false;
+
+         });
+     });
+
+</script>
 </html>
