@@ -4,17 +4,23 @@
         <title>Sistema de Gerenciamento de Bolsas Estudantis</title>
         <meta charset="UTF-8">
         <link href="css/estilos.css" rel="stylesheet" type="text/css" >
+        <script language="JavaScript" src="scripts/jScripts.js"></script>
+        
     </head>
-    <body>
+    <body onload="javascript:exibeDataHora('hora');">
+        
         <header>
          <div class="navegacao">
              <nav class="fixar"> 
                  <ul>
+                     <li><a href="#coisas">O que é?</a></li>
                     <li><a href="#coisas">Como funciona?</a></li>
                     <li><a href="#preco">Planos</a></li>
                     <li><a href="#termo">Termo de Uso</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    <li><a href="#contato">Acessar o sistema</a></li>
+                    <li><a href="#contato">ÁREA RESTRITA</a></li>
+                    <li><a href="#contato"> </a></li>
+                    <li><div id="dataMenu"><div id="hora"></div></div></li>
                  </ul>
              </nav>
          </div> 

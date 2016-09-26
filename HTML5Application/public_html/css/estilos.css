@@ -132,3 +132,12 @@ li a:hover {
     margin: 0;
     height: 100%;
 }
+
+#dataMenu{
+    align-content: center;
+    font-size: 10pt;
+    color: #eee;
+    margin: 15px;
+    width: 100%;
+
+}
