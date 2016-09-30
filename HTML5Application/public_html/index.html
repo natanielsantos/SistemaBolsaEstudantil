@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    
         <title>Sistema de Gerenciamento de Bolsas Estudantis</title>
         <meta charset="UTF-8">
         <link href="css/estilos.css" rel="stylesheet" type="text/css" >
         <script language="JavaScript" src="scripts/jScripts.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+
         
-    </head>
+       
+    
     <body onload="javascript:exibeDataHora('hora');">
         
         <header>
          <div class="navegacao">
              <nav class="fixar"> 
                  <ul>
-                     <li><a href="#coisas">O que é?</a></li>
-                    <li><a href="#cf" id="subir">Como funciona?</a></li>
-                    <li><a href="#preco">Planos</a></li>
-                    <li><a href="#termo">Termo de Uso</a></li>
+                     <li><a href="#oqe">O que é?</a></li>
+                    <li><a href="#cf">Como funciona?</a></li>
+                    <li><a href="#preco">Quanto custa?</a></li>
+                    <li><a href="#termo">Funcionalidades</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    <li><a href="#contato">ÁREA RESTRITA</a></li>
-                    <li><a href="#contato"> </a></li>
+                    <li><a href="#contato">ÁREA RESTRITA</a></li>                  
                     <li><div id="dataMenu"><div id="hora"></div></div></li>
                  </ul>
              </nav>
          </div> 
         </header>
        <section id="principal">
-           <div id="logomarca"><h1>Sistema de Gerenciamento <br>de Bolsas Estudantis</h1><br>
-           #maisSimples  #maisRapido  #maisTransparente</div>
+           <div id="logomarca"> <img src="imagens/logo-principal.png" alt=""/><br>
+                  
+           <br><br>#maisSimples  #maisRapido  #maisTransparente</div>
            
        </section>
         <section id="destaques">
-            <a name="cf"></a>
-            <h2>Como funciona<br><br><br><br><br><br></h2>
+            <a name="oqe"></a>
+            <h2>O que é?<br><br><br><br><br><br></h2>
         </section>
         <section id="destaques">
-            <a name="termo" id="subir"></a>
+            <a name="cf" id="rolar"></a>
+            <h1>Como fundiona<br><br><br><br><br><br></h1>
+        </section>
+        <section id="destaques">
+            <a name="preco"></a>
             <h1>Planos<br><br><br><br><br><br></h1>
         </section>
         <section id="destaques">
             <a name="termo"></a>
-            <h1>Termo de uso<br><br><br><br><br><br></h1>
+            <h1>Termo<br><br><br><br><br><br></h1>
         </section>
-        <section id="destaques">
-            <a name="termo"></a>
+         <section id="destaques">
+            <a name="contato"></a>
             <h1>Contato<br><br><br><br><br><br></h1>
         </section>
         <footer>
-            <div class="footer">@CopyRight - 2016 - Sistema de Gerenciamento de Bolsas Estudantis - v1.0</div>
+            <div class="footer">
+                <img src="imagens/logo-footer.png" alt=""/>
+                <small><br><br><br>@CopyRight - 2016 - Sistema de Gerenciamento de Bolsas Estudantis - v1.0
+                    <br>Termo de uso | Politica de Privacidade | Desenvolvedor</small>
+            </div>
+            
         </footer>
     </body>
-    <script type="text/javascript">
-    $(document).ready(function() {
-       $('#subir').click(function(){ 
-          $('html, body').animate({scrollTop:0}, 'slow');
-      return false;
 
-         });
-     });
-
-</script>
 </html>

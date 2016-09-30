@@ -13,7 +13,7 @@ body{
 }
 
 section{
-    margin:0;
+    display: block;
 }
 
 .navegacao{
@@ -36,12 +36,8 @@ section{
 h1{
     position: relative;
     text-align: center;
-    font-size: 22pt;
+    font-size: 26pt;
     color: #eee;
-}
-section{
-    width: 100%;
-    height: 100%;
 }
 
 footer{
@@ -57,7 +53,8 @@ footer{
 .footer{
     font-size: 11pt;
     color: white;
-    width: 25%;
+    width: 100%;
+    
     padding-top: 15px;
     padding-left: 10px;
     text-align: center;
@@ -125,7 +122,7 @@ li a:hover {
 
 #logomarca{
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 5%;
     
 }
@@ -134,7 +131,7 @@ li a:hover {
     /*height: 300px;*/
     background-color: #fff;
     width: 100%;
-    margin: 0;
+    margin: 0px;
     height: 100%;
 }
 
@@ -145,4 +142,16 @@ li a:hover {
     margin: 15px;
     width: 100%;
 
+}
+
+#oqe{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:11;
+	background-color:#000;
+	width:100%;
+	height:100%;
+	opacity: .50;
+	filter: alpha(opacity=65);
 }

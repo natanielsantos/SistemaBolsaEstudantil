@@ -84,3 +84,13 @@ function exibeDataHora(div){
    setTimeout("exibeDataHora('hora')", 1000);
    
 }
+
+// SCROLL AUTOMATÍCO
+
+function fazerScroll(direcao) {
+    var scrollAtual = frame.scrollTop();
+    var novaPosicao = direcao ? scrollAtual - 200 : scrollAtual + 200;
+    frame.animate({
+        scrollTop: novaPosicao
+    }, 1000);
+}
